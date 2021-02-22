@@ -11,7 +11,7 @@
 
 - [Introduction and Goals](./docs/01.%20Introduction%20and%20Goals.md)
 - [Architecture Constraints](./docs/02.%20Architecture%20Constraints.md)
-- [Context and scope]("./docs/03.%20Context%20and%20scope.md)
+- [Context and scope](./docs/03.%20Context%20and%20scope.md)
 - [Solution Strategy](./docs/04.%20Solution%20Strategy.md)
 - [Runtime View](./docs/05.%20Runtime%20View.md)
 - [Deployment View](./docs/06.%20Deployment%20View.md)
