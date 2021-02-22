@@ -39,6 +39,14 @@ namespace CarRent.Backend.CustomerManagement.API
             return _service.GetById(id).Select(entity => _mapper.Map<CustomerDto>(entity)).ToList();
         }
 
+        [HttpGet("search/{searchTerm}")]
+        public List<CustomerDto> Search(string searchTerm)
+        {
+            return _service.GetAll()
+                .Where(x => x.Firstname.Contains(searchTerm, StringComparison.InvariantCultureIgnoreCase) || x.Lastname.Contains(searchTerm, StringComparison.InvariantCultureIgnoreCase))
+                .Select(x => _mapper.Map<CustomerDto>(x)).ToList();
+        }
+
         [HttpPost]
         public void Post([FromBody] CustomerDto entity)
         {

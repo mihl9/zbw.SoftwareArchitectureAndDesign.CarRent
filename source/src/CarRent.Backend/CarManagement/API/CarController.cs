@@ -36,6 +36,14 @@ namespace CarRent.Backend.CarManagement.API
             return _carService.GetById(id).Select(car => _mapper.Map<CarDto>(car)).ToList();
         }
 
+        [HttpGet("search/{searchTerm}")]
+        public List<CarDto> Search(string searchTerm)
+        {
+            return _carService.GetAll()
+                .Where(x => x.Brand.Contains(searchTerm, StringComparison.InvariantCultureIgnoreCase) || x.Type.Contains(searchTerm, StringComparison.InvariantCultureIgnoreCase))
+                .Select(x => _mapper.Map<CarDto>(x)).ToList();
+        }
+
         [HttpPost]
         public void Post([FromBody] CarDto car)
         {
