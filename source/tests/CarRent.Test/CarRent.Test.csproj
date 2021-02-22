@@ -21,4 +21,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CarRent.Backend\CarRent.Backend.csproj" />
+    <ProjectReference Include="..\..\src\CarRent.Model\CarRent.Model.csproj" />
+  </ItemGroup>
+
 </Project>
