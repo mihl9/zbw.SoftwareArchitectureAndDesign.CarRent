@@ -43,8 +43,7 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"mihl9_zbw.SoftwareArchitectureAndDesign.CarRent" /o:"mihl9" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-              dotnet test --no-build --verbosity normal ./source
-              dotnet restore ./source
-              dotnet build --no-restore ./source
-              dotnet test --no-build --verbosity normal ./source
+          dotnet restore ./
+          dotnet build --no-restore ./
+          dotnet test --no-build --verbosity normal ./
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
