@@ -1,21 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{9EB5075E-33E9-4694-B205-A1BAE81B65A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{24F8C629-1277-4477-A3CD-79D3ED25A22B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRent.Backend", "source\src\CarRent.Backend\CarRent.Backend.csproj", "{7187A364-9D46-4E2D-9FDB-203F5BC5EA92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRent.Backend", "source\src\CarRent.Backend\CarRent.Backend.csproj", "{7187A364-9D46-4E2D-9FDB-203F5BC5EA92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRent.Frontend", "source\src\CarRent.Frontend\CarRent.Frontend.csproj", "{D8E1BD61-1C97-4CDC-AB07-D151CD67727F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRent.Frontend", "source\src\CarRent.Frontend\CarRent.Frontend.csproj", "{D8E1BD61-1C97-4CDC-AB07-D151CD67727F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRent.Model", "source\src\CarRent.Model\CarRent.Model.csproj", "{2304CF05-172F-443A-88E8-0F4E39B10F46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRent.Model", "source\src\CarRent.Model\CarRent.Model.csproj", "{2304CF05-172F-443A-88E8-0F4E39B10F46}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{73CE7414-7F53-404C-8CD5-4C9E8A44DB00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRent.Test", "source\tests\CarRent.Test\CarRent.Test.csproj", "{911D2155-D336-4FC5-91E2-CE60C7249288}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRent.Test", "source\tests\CarRent.Test\CarRent.Test.csproj", "{911D2155-D336-4FC5-91E2-CE60C7249288}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{31627244-EF1C-4DA3-9FD3-CECA6A716D6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,9 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7187A364-9D46-4E2D-9FDB-203F5BC5EA92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -79,6 +78,9 @@ Global
 		{911D2155-D336-4FC5-91E2-CE60C7249288}.Release|x86.ActiveCfg = Release|Any CPU
 		{911D2155-D336-4FC5-91E2-CE60C7249288}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{24F8C629-1277-4477-A3CD-79D3ED25A22B} = {9EB5075E-33E9-4694-B205-A1BAE81B65A3}
 		{7187A364-9D46-4E2D-9FDB-203F5BC5EA92} = {24F8C629-1277-4477-A3CD-79D3ED25A22B}
@@ -86,5 +88,8 @@ Global
 		{2304CF05-172F-443A-88E8-0F4E39B10F46} = {24F8C629-1277-4477-A3CD-79D3ED25A22B}
 		{73CE7414-7F53-404C-8CD5-4C9E8A44DB00} = {9EB5075E-33E9-4694-B205-A1BAE81B65A3}
 		{911D2155-D336-4FC5-91E2-CE60C7249288} = {73CE7414-7F53-404C-8CD5-4C9E8A44DB00}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1BA76F0-2882-4CBD-A53C-79EF8679C660}
 	EndGlobalSection
 EndGlobal
